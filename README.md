@@ -24,7 +24,7 @@ subs = client.list_subscribers(params=None)
 #### Create Subscriber
 ```
 subscriber = {
-    "email": "juankrios15@gmail.com",
+    "email": "carlos@burgos.com",
     "fields": {
         "name": "Carlos",
         "last_name": "Burgos",
