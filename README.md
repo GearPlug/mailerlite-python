@@ -11,7 +11,6 @@ pip install mailerlite-python
 from mailerlite.client import Client
 client = Client('API_KEY')
 ```
-
 ### Subscribers
 #### List Subscribers
 ```
@@ -31,7 +30,7 @@ subscriber = {
         "city": "Bogotá",
     }
 }
-sub = client.create_subscribers(subscriber)
+sub = client.create_subscriber(subscriber)
 ```
 #### List Groups
 ```

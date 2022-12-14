@@ -22,6 +22,13 @@ class Client(object):
         """
         return self.get('subscribers', params=params)
 
+    def fetch_subscriber(self, reference):
+        """
+        Params:
+        reference = Email or ID
+        """
+        return self.get(f'subscribers/{reference}')
+
     def create_subscriber(self, data):
         """
         Request:
