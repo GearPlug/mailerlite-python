@@ -47,6 +47,12 @@ class Client(object):
         """
         return self.post(f'subscribers/{subscriber_id}/unsubscribe')
 
+    def delete_subscriber(self, subscriber_id):
+        """
+        Unsubscribe user subscribed.
+        """
+        return self.delete(f'subscribers/{subscriber_id}')
+
     def assign_to_group(self, subscriber_id, group_id):
         """
         Assign specific user/subscriber to group
