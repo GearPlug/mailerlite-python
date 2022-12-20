@@ -32,6 +32,23 @@ subscriber = {
 }
 sub = client.create_subscriber(subscriber)
 ```
+#### Fetch Subscriber
+```
+# Reference can be either email or ID
+subscriber = client.fetch_subscriber(reference)
+```
+#### Delete Subscriber
+```
+client.delete_subscriber(subscriber_id)
+```
+#### Unsubscribe Subscriber
+```
+client.unsubscribe_subscriber(subscriber_id)
+```
+#### Assign Subscriber to a Group
+```
+client.assign_to_group(subscriber_id, group_id)
+```
 #### List Groups
 ```
 groups = client.list_groups(params=None)
@@ -44,12 +61,10 @@ groups = client.list_groups(params=None)
 
 ### Webhooks
 #### List all webhooks
-
 ```
 webhooks = client.list_webhooks()
 ```
 #### Create webhook
-
 ```
 webhook = {
     "name": "first webhook",
@@ -57,4 +72,8 @@ webhook = {
     "url": "http://www.cartwright.info/eligendi-soluta-corporis-in-quod-ullam"
 }
 webhook_created = client.create_webhook(webhook)
+```
+#### Delete webhook
+```
+client.delete_webhook(webhook_id)
 ```
