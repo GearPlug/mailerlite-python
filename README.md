@@ -31,6 +31,7 @@ subscriber = {
     }
 }
 sub = client.create_subscriber(subscriber)
+# If user email already exists, updates existing subscriber.
 ```
 #### Fetch Subscriber
 ```
@@ -40,6 +41,10 @@ subscriber = client.fetch_subscriber(reference)
 #### Delete Subscriber
 ```
 client.delete_subscriber(subscriber_id)
+```
+#### Subscribe Subscriber
+```
+client.activate_subscriber(subscriber_id)
 ```
 #### Unsubscribe Subscriber
 ```

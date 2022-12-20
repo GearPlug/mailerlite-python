@@ -41,6 +41,12 @@ class Client(object):
         """
         return self.post('subscribers', data=data)
 
+    def activate_subscriber(self, subscriber_id):
+        """
+        Unsubscribe user subscribed.
+        """
+        return self.post(f'subscribers/{subscriber_id}/subscribe')
+
     def unsubscribe_subscriber(self, subscriber_id):
         """
         Unsubscribe user subscribed.
