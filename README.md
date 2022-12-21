@@ -54,6 +54,10 @@ client.unsubscribe_subscriber(subscriber_id)
 ```
 client.assign_to_group(subscriber_id, group_id)
 ```
+#### List Subscriber fields
+```
+fields = client.list_subscriber_fields()
+```
 #### List Groups
 ```
 groups = client.list_groups(params=None)

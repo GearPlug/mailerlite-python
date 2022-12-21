@@ -65,6 +65,12 @@ class Client(object):
         """
         return self.post(f'subscribers/{subscriber_id}/groups/{group_id}')
 
+    def list_subscriber_fields(self):
+        """
+        List Subscriber Default and Custom Fields
+        """
+        return self.get(f'fields')
+
     def list_groups(self, params=None):
         """
         Params:
