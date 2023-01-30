@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/version-0.1.1-success) ![](https://img.shields.io/badge/code-Python-4B8BBE?logo=python&logoColor=white)
 # mailerlite-python
 
 mailerlite-python is an API wrapper for MailerLite, written in Python
